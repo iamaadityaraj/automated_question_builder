@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/anotherappbackground"
+    tools:context=".views.UserOptionsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/loginPageAppText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:background="@color/white"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/companyTitle"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/adminLogo"
+        android:layout_width="83dp"
+        android:layout_height="145dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="200dp"
+        android:src="@drawable/adminlogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/adminButton"
+        android:layout_width="131dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="92dp"
+        android:background="@drawable/edit_text_white_background"
+        android:padding="3dp"
+        android:text="@string/admin_desc"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/adminLogo"
+        app:layout_constraintTop_toTopOf="@+id/loginPageAppText" />
+
+    <TextView
+        android:id="@+id/adminText"
+        android:layout_width="292dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="28dp"
+        android:padding="7dp"
+        android:text="@string/admin_description"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintStart_toEndOf="@+id/adminLogo"
+        app:layout_constraintTop_toBottomOf="@+id/adminButton" />
+
+    <ImageView
+        android:id="@+id/trainerLogo"
+        android:layout_width="83dp"
+        android:layout_height="143dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/adminlogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adminLogo" />
+
+    <Button
+        android:id="@+id/trainerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/edit_text_white_background"
+        android:padding="3dp"
+        android:text="@string/trainer_desc"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toEndOf="@+id/trainerLogo"
+        app:layout_constraintTop_toBottomOf="@+id/adminText" />
+
+    <TextView
+        android:id="@+id/trainerText"
+        android:layout_width="292dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/trainer_description"
+        android:textColor="@color/black"
+        android:padding="7dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/trainerLogo"
+        app:layout_constraintTop_toBottomOf="@+id/trainerButton" />
+
+    <ImageView
+        android:id="@+id/employeeLogo"
+        android:layout_width="83dp"
+        android:layout_height="143dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/adminlogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/trainerLogo" />
+
+    <Button
+        android:id="@+id/EmployeeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="26dp"
+        android:padding="3dp"
+        android:text="@string/employee_desc"
+        android:background="@drawable/edit_text_white_background"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/employeeLogo"
+        app:layout_constraintTop_toBottomOf="@+id/trainerText" />
+
+    <TextView
+        android:id="@+id/employeeText"
+        android:layout_width="292dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/employee_description"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/employeeLogo"
+        app:layout_constraintTop_toBottomOf="@+id/EmployeeButton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

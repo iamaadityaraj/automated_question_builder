@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/thirdappbackground"
+    android:focusableInTouchMode="true"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/subjectInput"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/edit_text_blue_background"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="Subject"
+        android:inputType="text"
+        android:padding="10dp"
+        android:windowSoftInputMode="adjustResize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numberOfQuestion" />
+
+    <EditText
+        android:id="@+id/numberOfQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/edit_text_blue_background"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="@string/no.of.Question"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:windowSoftInputMode="adjustResize"
+        app:layout_constraintEnd_toStartOf="@+id/difficultyofquestionLevel"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_text" />
+
+    <Spinner
+        android:id="@+id/questionType"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/edit_text_blue_background"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="Question Type"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/numberOfQuestion"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_text" />
+
+    <Spinner
+        android:id="@+id/difficultyofquestionLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/edit_text_blue_background"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:padding="10dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_text" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewResponses"
+        android:layout_width="400dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subjectInput" />
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:text="@string/welcomeToBrainWave"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <EditText
+            android:id="@+id/writingText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toStartOf="@id/sendButton"
+            android:background="@drawable/edit_text_background"
+            android:hint="@string/writeHere"
+            android:inputType="text"
+            android:padding="16dp"
+            android:textColor="@color/black" />
+
+        <ImageButton
+            android:id="@+id/sendButton"
+            android:layout_width="47dp"
+            android:layout_height="54dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/sendButton"
+            android:padding="8dp"
+            android:src="@drawable/ic_baseline_send_24" />
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

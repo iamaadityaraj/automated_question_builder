@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/anotherappbackground"
+    tools:context=".views.GenerativeActivity">
+
+
+    <Button
+        android:id="@+id/SignOut"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_white_background"
+        android:text="@string/signOut"
+        app:layout_constraintBottom_toTopOf="@+id/generativePageAppLogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/generativePageAppLogo"
+        android:layout_width="400dp"
+        android:layout_height="401dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/finalapplogo"
+        app:layout_constraintBottom_toTopOf="@+id/generateQuestionButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.493" />
+
+    <Button
+        android:id="@+id/generateQuestionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/edit_text_white_background"
+        android:padding="20dp"
+        android:text="@string/generateQuestion"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <Button
+        android:id="@+id/viewExistingBanksButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/edit_text_white_background"
+        android:padding="20dp"
+        android:text="@string/viewExistingQuestionBank"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/generateQuestionButton"
+        app:layout_constraintStart_toStartOf="@+id/generateQuestionButton"
+        app:layout_constraintTop_toBottomOf="@+id/generateQuestionButton" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="501dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

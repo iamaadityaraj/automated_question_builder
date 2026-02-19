@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "372196950592",
+    "project_id": "automated-question-builder",
+    "storage_bucket": "automated-question-builder.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:372196950592:android:b18d7af860102b31dd95a5",
+        "android_client_info": {
+          "package_name": "com.example.questionbuilder"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0ZTCT_v5gXw1f9WhpsLSZp16ZXQs_8yw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
